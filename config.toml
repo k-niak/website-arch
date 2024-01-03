@@ -32,7 +32,7 @@ enableEmoji = true
   #orgLocal = "Anywhere"
   #description = "A modern, beautiful, and easily configurable blog theme for Hugo."
   favicon = "/img/favicon.ico"
-  logo = "/img/icons8-home-w-512.png"
+  logo = "/img/icons8-home-b-512.png"
   mainSections = ["portfolio"]
   navallcaps = true
   # show/hide social icons in site header & footer
@@ -149,7 +149,7 @@ enableEmoji = true
   [[menu.header]]
     name = "Contact"
     title = "Contact"
-    url = "/contact/"
+    url = "/elements/"
     weight = 3
     
   # Configure footer  

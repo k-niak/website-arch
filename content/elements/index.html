@@ -9,6 +9,7 @@ show_title_as_headline: true
 ---
 
 <div class="flex-l">
+  <!--
   <div class="w-50-l pr4-l">
     <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Font Sizes</h6>
     <div class="w-100 overflow-x-auto">
@@ -74,15 +75,17 @@ show_title_as_headline: true
       <dd>The fourth definition description</dd>
     </dl>
   </div>
+  --->
   <div class="w-50-l pl4-l">
-    <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Forms</h6>
+    <!-- <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Forms</h6> -->
     <form name="sample-submission" method="post" accept-charset="utf-8">
       <fieldset id="sample-inputs">
-        <legend>Sample Form</legend>
+        <!-- <legend>Sample Form</legend> -->
         <label for="full-name">Full Name</label>
         <input type="text" name="name" id="full-name" placeholder="First and Last" required>
         <label for="email-address">Email address</label>
         <input type="email" name="_replyto" id="email-address" placeholder="your@email.here" required>
+        <!--
         <label for="email-purpose">Purpose</label>
         <select name="purpose" id="email-purpose">
           <option value="initial-contact" selected>Initial Contact</option>
@@ -91,11 +94,13 @@ show_title_as_headline: true
           <option value="check-in">Check In</option>
           <option value="opt-out">Opt Out</option>
         </select>
+        -->
         <label for="message">Message</label>
         <textarea rows="4" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required></textarea>
       </fieldset>
       <input type="submit" value="Button Label">
     </form>
+    <!--
     <form action="sample-form-submit" method="get" accept-charset="utf-8">
       <div class="db dt-ns f5 w-100 mv4 mh0">
         <div class="db dtc-ns v-btm pr1-ns">
@@ -159,4 +164,5 @@ show_title_as_headline: true
     <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Figure Shortcode</h6>
     {{< figure src="https://via.placeholder.com/1024x768/DDD/EEE?text=4:3" alt="A sample 4:3 ratio image" caption="This is an image caption provided through a figure shortcode using figcaption." >}}
   </div>
+  -->
 </div>
