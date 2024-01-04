@@ -11,37 +11,46 @@ show_title_as_headline: true
 <div class="flex-l">
   <div class="w-100-l pr4-l">
     <style>
-      body {
-        margin: 3em;
-      }
-      .card:hover {
-        transform: scale(1.1);
-      }
+   .card-container {
+      display: flex;
+      flex-direction: column; /* Stack vertically on smaller screens */
+      align-items: center; /* Center the cards */
+    }
+    
+    .card {
+      border: 0.5px solid #848484;
+      border-bottom: 3px solid #ffffcc;
+      background-color: #424242;
+      transition: transform 0.5s;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      width: 90%; /* Slightly less than full width for margins */
+      margin: 10px;
+      text-align: center;
+    }
+    
+    .card img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+    
+    .card:hover {
+      transform: scale(1.1);
+    }
+    
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
       .card-container {
-        display: flex;
-        justify-content: space-around; /* Space the boxes evenly */
-        flex-wrap: wrap; /* Wrap items if necessary */
+        flex-direction: row; /* Lay out cards in a row */
+        justify-content: space-around;
       }
+    
       .card {
-        flex-grow: 1;
-        flex-shrink: 0;
-        border: 0.5px solid #848484;
-        border-bottom: 3px solid #ffffcc;
-        background-color: #424242;
-        transition: transform 0.5s;
-        text-decoration: none;
-        align-items: center;
-        justify-content: center;
-        /* height: 400px; */ 
-        width: calc(33% - 20px); /* Adjust this percentage based on the number of boxes */
-        text-align: center;
-        margin: 10px;
+        width: calc(33% - 20px); /* Adjust width for 3 cards in a row */
       }
-      .card img {
-        max-width: 100%; /* Ensures image does not exceed the width of the card */
-        max-height: 100%; /* Ensures image does not exceed the height of the card */
-        object-fit: contain; /* Keeps the aspect ratio of the image */
-      }
+    }
     </style>
     <div class="card-container">
         <a href="your-link-here" class="card card-button">
