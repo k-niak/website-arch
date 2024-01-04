@@ -1,9 +1,9 @@
 ---
-title: "Bakeoff"
-subtitle: "An R Package"
-excerpt: "This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the form front matter."
-date: 2019-07-01
-author: "Eric Anderson"
+title: "Commercial"
+#subtitle: "An R Package"
+#excerpt: "This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the form front matter."
+#date: 2019-07-01
+#author: "Eric Anderson"
 draft: false
 tags:
   - hugo-site
@@ -24,6 +24,8 @@ links:
 ---
 
 ![Formspree Logo](formspree-logo.png)
+
+<h1>Hi</h1>
 
 ## [Formspree](https://formspree.io) makes it easy to receive submissions from HTML forms on your static website.
 
