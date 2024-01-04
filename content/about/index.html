@@ -1,5 +1,5 @@
 ---
-title: Typography Styles & Element Examples
+#title: Title
 description: The "kitchen sink," if you will ... a page showing examples of type and page elements included in this template.
 date: 2019-02-18T12:27:33-06:00
 draft: false
@@ -9,8 +9,8 @@ show_title_as_headline: true
 ---
 
 <div class="flex-l">
-  <!--
   <div class="w-50-l pr4-l">
+    <!--
     <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Font Sizes</h6>
     <div class="w-100 overflow-x-auto">
       <table class="w-100 mb2">
@@ -38,18 +38,22 @@ show_title_as_headline: true
         </tbody>
       </table>
     </div>
-    <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Type Samples</h6>
+    -->
+    <!-- <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Type Samples</h6> -->
     <h1 class="f-headline measure-narrow lh-solid">Head&shy;line</h1>
     <h1 class="f-subheadline measure-narrow lh-solid">Sub&shy;head&shy;line</h1>
     <h1 class="f2 f1-ns measure-narrow lh-title">Level 1 Heading</h1>
-    <p class="f4-ns measure lh-copy">One page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</p>
+    <p class="f4-ns measure lh-copy">Some text.</p>
     <h2 class="f2">Level 2 Heading</h2>
-    <p class="measure lh-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla tortor mauris condimentum nibh.</p>
+    <p class="measure lh-copy">More text if you wish.</p>
+    <!--
     <p class="measure lh-copy"><a href="#">Maecenas faucibus mollis interdum</a>. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet.</p>
+    -->
     <h3 class="f3">Level 3 Heading</h3>
-    <p class="measure lh-copy">Cras mattis consectetur purus sit amet fermentum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo.</p>
+    <p class="measure lh-copy">More text if you wish.</p>
     <h4 class="f4">Level 4 Heading</h4>
-    <p class="measure lh-copy">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+    <p class="measure lh-copy">More text if you wish.</p>
+    <!--
     <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">More Type Samples</h6>
     <blockquote class="ml0 pl3 bl bw2 b--black-20">
       <p class="lh-copy measure">Discipline in typography is a prime virtue. Individuality must be secured by means that are rational. Distinction needs to be won by simplicity and restraint. It is equally true that these qualities need to be infused wiht a certain spirit and vitality, or they degenerate into dullness and mediocrity.</p>
@@ -74,18 +78,72 @@ show_title_as_headline: true
       <dd>The third definition description</dd>
       <dd>The fourth definition description</dd>
     </dl>
+  -->
+    <style>
+      body {
+        margin: 3em;
+      }
+      .card:hover {
+        transform: scale(1.1);
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-around; /* This will space the boxes evenly */
+      }
+      .card {
+        border: 0.5px solid #848484; /* This sets a 2px solid blue border on all sides */
+        border-bottom: 3px solid #ffffcc;
+        background-color: #424242;
+        transition: transform 0.5s;
+        text-decoration: none; /* Remove underline */
+        display: flex; /* Use flexbox for vertical alignment */
+        align-items: center; /* Align items vertically */
+        justify-content: center; /* Align items horizontally */
+        height: 50px; /* Set a fixed height */
+        width: 18rem; /* Set a fixed width for each box */
+        text-align: center; /* Optional: To center the text inside the box */
+        margin: 10px; /* Optional: To add some space around each box */
+      }
+    </style>
+    <h4 class="f4">Our Services</h4>
+    <div class="card-container">
+      <a href="your-link-here" class="card card-button" style="color:#ffffff;">
+        Service 1
+      </a>
+      <a href="your-link-here" class="card card-button" style="color:#ffffff;">
+        Service 2
+      </a>
+      <a href="your-link-here" class="card card-button" style="color:#ffffff;">
+        Service 3
+      </a>
+      <a href="your-link-here" class="card card-button" style="color:#ffffff;">
+        Service 4
+      </a>
+    </div>
+    <!--
+    <div class="card" style="width: 18rem;">
+      <img src="https://codingyaar.com/wp-content/uploads/card-image.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    -->
   </div>
-  --->
   <div class="w-50-l pl4-l">
-    <!-- <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Forms</h6> -->
+    <!--<h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Figure Shortcode</h6>-->
+    {{< figure src="https://via.placeholder.com/1024x768/DDD/EEE?text=4:3" alt="A sample 4:3 ratio image" caption="Image placeholder." >}}
+    {{< figure src="https://via.placeholder.com/1024x768/DDD/EEE?text=4:3" alt="A sample 4:3 ratio image" caption="Image 2 placeholder." >}}
+    <!--
+    <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Forms</h6>
     <form name="sample-submission" method="post" accept-charset="utf-8">
       <fieldset id="sample-inputs">
-        <!-- <legend>Sample Form</legend> -->
+        <legend>Sample Form</legend>
         <label for="full-name">Full Name</label>
         <input type="text" name="name" id="full-name" placeholder="First and Last" required>
         <label for="email-address">Email address</label>
         <input type="email" name="_replyto" id="email-address" placeholder="your@email.here" required>
-        <!--
         <label for="email-purpose">Purpose</label>
         <select name="purpose" id="email-purpose">
           <option value="initial-contact" selected>Initial Contact</option>
@@ -94,13 +152,11 @@ show_title_as_headline: true
           <option value="check-in">Check In</option>
           <option value="opt-out">Opt Out</option>
         </select>
-        -->
         <label for="message">Message</label>
         <textarea rows="4" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required></textarea>
       </fieldset>
       <input type="submit" value="Button Label">
     </form>
-    <!--
     <form action="sample-form-submit" method="get" accept-charset="utf-8">
       <div class="db dt-ns f5 w-100 mv4 mh0">
         <div class="db dtc-ns v-btm pr1-ns">
@@ -161,8 +217,8 @@ show_title_as_headline: true
   margin: 0px auto;
   max-width: 1440px;
 }{{< /highlight >}}
-    <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Figure Shortcode</h6>
+  <h6 class="ttu tracked black-30 pv3 mt5 bt b--black-10">Sample Figure Shortcode</h6>
     {{< figure src="https://via.placeholder.com/1024x768/DDD/EEE?text=4:3" alt="A sample 4:3 ratio image" caption="This is an image caption provided through a figure shortcode using figcaption." >}}
-  </div>
   -->
+  </div>
 </div>

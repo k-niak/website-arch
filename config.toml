@@ -150,7 +150,7 @@ enableEmoji = true
     name = "Contact"
     title = "Contact"
     url = "/contact/"
-    weight = 3
+    weight = 4
     
   # Configure footer  
 #  [[menu.footer]]
