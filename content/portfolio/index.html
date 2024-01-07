@@ -40,6 +40,17 @@ show_title_as_headline: true
       transform: scale(1.1);
     }
     
+    .card-title {
+      display: block; /* Makes the span behave like a block element */
+      color: #ffffff; /* Set the text color */
+      text-align: center; /* Center the text */
+      margin-top: 5px; /* Add some space below the title */
+      margin-bottom: 5px; /* Add some space below the title */
+      font-size: 1.2em; /* Adjust the font size as needed */
+      font-weight: bold;
+      /* Add more styles as needed (e.g., font-weight, font-family) */
+    }
+    
     /* Media query for larger screens */
     @media (min-width: 768px) {
       .card-container {
@@ -53,13 +64,16 @@ show_title_as_headline: true
     }
     </style>
     <div class="card-container">
-        <a href="your-link-here" class="card card-button">
+        <a href="/hospitality/" class="card card-button">
+          <span class="card-title">Hospitality</span>
           <img src="hospitality-sketch.png" alt="Hospitality">
         </a>
-        <a href="your-link-here" class="card card-button">
+        <a href="/housing/" class="card card-button">
+          <span class="card-title">Housing</span>
           <img src="housing-sketch.png" alt="Housing">
         </a>
-        <a href="your-link-here" class="card card-button">
+        <a href="/commercial/" class="card card-button">
+          <span class="card-title">Commercial</span>
           <img src="commercial-sketch.png" alt="Commercial">
         </a>
       <!--

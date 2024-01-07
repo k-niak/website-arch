@@ -88,32 +88,45 @@ show_title_as_headline: true
       }
       .card-container {
         display: flex;
-        justify-content: space-around; /* This will space the boxes evenly */
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center the cards */
       }
+      
       .card {
-        border: 0.5px solid #848484; /* This sets a 2px solid blue border on all sides */
+        border: 0.5px solid #848484;
         border-bottom: 3px solid #ffffcc;
         background-color: #424242;
         transition: transform 0.5s;
-        text-decoration: none; /* Remove underline */
-        display: flex; /* Use flexbox for vertical alignment */
-        align-items: center; /* Align items vertically */
-        justify-content: center; /* Align items horizontally */
-        height: 50px; /* Set a fixed height */
-        width: 18rem; /* Set a fixed width for each box */
-        text-align: center; /* Optional: To center the text inside the box */
-        margin: 10px; /* Optional: To add some space around each box */
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        width: 90%; /* Full width for smaller screens */
+        margin: 10px;
+        text-align: center;
+        padding: 10px; /* Add padding around the text */
+      }
+      
+      /* Media query for larger screens */
+      @media (min-width: 768px) {
+        .card-container {
+          flex-direction: row; /* Lay out cards in a row */
+          justify-content: space-around;
+        }
+      
+        .card {
+          width: calc(33% - 20px); /* Adjust width for 3 cards in a row */
+        }
       }
     </style>
     <h4 class="f4">Our Services</h4>
     <div class="card-container">
-      <a href="your-link-here" class="card card-button" style="color:#ffffff;">
+      <a href="/hospitality/" class="card card-button" style="color:#ffffff;">
         Hospitality
       </a>
-      <a href="your-link-here" class="card card-button" style="color:#ffffff;">
+      <a href="/housing/" class="card card-button" style="color:#ffffff;">
         Housing
       </a>
-      <a href="your-link-here" class="card card-button" style="color:#ffffff;">
+      <a href="/commercial/" class="card card-button" style="color:#ffffff;">
         Commercial
       </a>
     </div>
